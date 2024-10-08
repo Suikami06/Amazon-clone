@@ -1,4 +1,4 @@
-import "./Banner.css"
+import "../Home/Banner.css"
 import React from "react";
 import Carousel from "react-material-ui-carousel";
 const data = [
@@ -7,9 +7,9 @@ const data = [
     "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/ec854ad3a187994e.jpeg?q=20",
     "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/99d99dfd23118bed.jpeg?q=20"
 ]
- export const Banner = () => {
+const banner = () => {
     return (
-        <div>
+        <>
             <Carousel
                 className="carousel"
                 autoplay={true}
@@ -38,9 +38,10 @@ const data = [
                     })
                 }
        
-            </Carousel>
+        </Carousel>
 
 
-        </div>
+        </>
     )
 }
+export default banner;
